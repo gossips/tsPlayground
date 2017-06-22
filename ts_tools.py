@@ -101,3 +101,7 @@ def corr(x,y):
         This function raises no custom exceptions.
     """
     return cov(x,y)/(sd(x)*sd(y))
+
+def circshift(x,l):
+
+    return 0
