@@ -16,7 +16,7 @@ from numpy import zeros, append
 def mean(x):
     """
     Mean value of x
-    
+
     Returns the mean value of a row-shaped array.
 
     Args:
@@ -27,19 +27,19 @@ def mean(x):
 
     Raises:
         This function raises no custom exceptions.
-    """    
+    """
     return sum(x)/len(x)
-    
+
 def cov(x,y):
     """
-    Covariance of x and y   
-    
+    Covariance of x and y
+
     Returns the covariance of two row-shaped arrays.
-    
+
         Args:
         x: a row-shaped numeric array.
         y: a row-shaped numeric array.
-        
+
     Returns:
         A float containing the covariance value.
 
@@ -53,7 +53,7 @@ def cov(x,y):
 def var(x):
     """
     Variance of x
-    
+
     Returns the variance of a row-shaped array.
 
     Args:
@@ -70,7 +70,7 @@ def var(x):
 def sd(x):
     """
     Standard deviation of x
-    
+
     Returns the standard deviation of a row-shaped array.
 
     Args:
@@ -87,13 +87,13 @@ def sd(x):
 def corr(x,y):
     """
     Returns correlation of arrays x and y
-    
+
     Returns the correlation of two row-shaped arrays
-    
+
         Args:
         x: a row-shaped numeric array.
         y: a row-shaped numeric array.
-        
+
     Returns:
         A float containing the correlation value.
 
@@ -103,5 +103,24 @@ def corr(x,y):
     return cov(x,y)/(sd(x)*sd(y))
 
 def circshift(x,l):
+    """
+    Shift array circularly.
+
+    Returns the shifted array.
+
+    Args:
+        x: a row-shaped numeric array.
+        l: an integer containing the number of shift steps.
+
+    Returns:
+        A shifted array.
+
+    Example:
+        circshift([1,2,3,4], 2)
+        returns: [3,4,1,2]
+
+    Raises:
+        This function raises no custom exceptions.
+    """
 
     return 0
